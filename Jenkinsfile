@@ -1,6 +1,9 @@
 pipeline {
     agent { label 'jenkins-slave-linux-server' }
     stages {
+        stage('Git Installation') {
+        sh 'sudo yum install -y git'
+        }
         stage('Clone Repo') {
             steps {
                 git 'https://github.com/Veda959/Jenkins-Zero-To-Hero.git'

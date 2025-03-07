@@ -1,5 +1,5 @@
 pipeline {
-    agent {label '
+    agent { label 'jenkins-slave-linux-server' }
     stages {
         stage('Clone Repo') {
             steps {
